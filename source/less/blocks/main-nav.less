@@ -1,0 +1,62 @@
+
+/*Описание состояний для блока main-nav*/
+
+.main-nav {
+  position: relative;
+}
+.main-nav__link {
+  display: table-cell;
+  width: 320px;
+  height: 55px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px
+}
+
+.main-nav__list {
+  .list-reset
+}
+
+.main-nav__item:not(:last-child){
+  border-bottom: solid 1px #678fa8;
+}
+
+.main-nav__item:not(:first-child){
+  border-top: solid 1px #9ac2db;
+}
+
+.main-nav__close {
+  position: absolute;
+ top: 20px;
+ right: 20px;
+ width: 22px;
+ height: 22px;
+ font-size: 0;
+ background-color: #81b3d2;
+ border: 0;
+ cursor: pointer;
+ outline: 0;
+}
+
+.main-nav__close::before,
+.main-nav__close::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 22px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.main-nav__close::before {
+  transform: rotate(45deg);
+}
+
+.main-nav__close::after {
+  transform: rotate(-45deg);
+}
