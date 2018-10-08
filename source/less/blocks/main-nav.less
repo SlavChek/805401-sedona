@@ -3,6 +3,7 @@
 
 .main-nav {
   position: relative;
+  min-height: 280px;
 }
 .main-nav__link {
   display: table-cell;
@@ -59,4 +60,25 @@
 
 .main-nav__close::after {
   transform: rotate(-45deg);
+}
+
+.main-nav__open {
+  position: absolute;
+  padding: 0px;
+  top: 240px;
+  right: 0px;
+  font-size: 0px;
+  border: 0px;
+}
+
+.main-nav__open::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
