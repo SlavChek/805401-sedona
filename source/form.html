@@ -28,84 +28,84 @@
       </section>
     </header>
     <main class="page-main main-container">
-      <section class="comment">
-        <h2 class="title title-comment">оставьте свой отзыв</h2>
+      <section class="page-main__comment wrapper">
+        <h2 class="title--middle page-main__comment-title">оставьте свой отзыв</h2>
         <p>
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.
         </p>
       </section>
-      <section class="feedback">
+      <section class="feedback wrapper">
         <h3 class="visually-hidden">Форма обратной связи</h3>
-        <form class="feedback_form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="feedback-section">
-            <legend class="feedback-section__title">представьтесь:</legend>
+        <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="feedback__section">
+            <legend class="feedback__title feedback__title--name title--middle">представьтесь:</legend>
             <div class="feedback__name">
               <label class="feedback__label feedback__label--name" for="first-name">имя:*</label>
-              <input class="feedback__input feedback__input--name" name="first-name" id="first-name" type="text" placeholder="Пётр">
+              <input class="feedback__input feedback__input--name title--middle" name="first-name" id="first-name" type="text" placeholder="Пётр">
             </div>
             <div class="feedback__name">
               <label class="feedback__label feedback__label--name" for="last-name">фамилия:*</label>
-              <input class="feedback__input feedback__input--name" name="last-name" id="last-name" type="text" placeholder="Иванов">
+              <input class="feedback__input feedback__input--name title--middle" name="last-name" id="last-name" type="text" placeholder="Иванов">
             </div>
             <div class="feedback__name">
-              <label class="feedback__label feedback__label--name" for="middle-name">отчество</label>
-              <input class="feedback__input feedback__input--name" name="middle-name" id="middle-name" type="text" placeholder="Александрович">
+              <label class="feedback__label feedback__label--name" for="middle-name">отчество :</label>
+              <input class="feedback__input feedback__input--name title--middle" name="middle-name" id="middle-name" type="text" placeholder="Александрович">
             </div>
           </fieldset>
-          <fieldset class="feedback-section">
-            <legend class="feedback-section__title">контактная информация:</legend>
+          <fieldset class="feedback__section">
+            <legend class="feedback__title feedback__title--contacts title--middle">контактная информация:</legend>
             <div class="feedback__contacts">
               <label class="feedback__label feedback__label--contacts" for="phone">контактный телефон:*</label><br>
-              <input class="feedback__input feedback__input--contacts" name="phone" id="phone" type="tel" placeholder="Введите телефон">
+              <input class="feedback__input feedback__input--contacts title--middle" name="phone" id="phone" type="tel" placeholder="Введите телефон">
             </div>
             <div class="feedback__contacts">
               <label class="feedback__label feedback__label--contacts" for="email">электронная почта:*</label><br>
-              <input class="feedback__input feedback__input--contacts" name="email" id="email" type="text" placeholder="Введите e-mail">
+              <input class="feedback__input feedback__input--contacts title--middle" name="email" id="email" type="text" placeholder="Введите e-mail">
             </div>
           </fieldset>
-          <fieldset class="feedback-section">
-            <legend class="feedback-section__title">Ваше общее впечатление:</legend>
+          <fieldset class="feedback__section">
+            <legend class="feedback__title feedback__title--impression title--middle">Ваше общее впечатление:</legend>
             <div class="feedback__impression">
               <input class="visually-hidden feedback__input feedback__input--impression" type="radio" name="impression" id="good" value="good" checked>
-              <label class="feedback__label feedback__label--impression" for="good">Скорее положительное</label>
+              <label class="feedback__label feedback__label--impression title--middle" for="good">Скорее положительное</label>
             </div>
             <div class="feedback__impression">
               <input class="visually-hidden feedback__input feedback__input--impression" type="radio" name="impression" id="not-bad" value="not-bad">
-              <label class="feedback__label feedback__label--impression" for="not-bad">корее отрицательное</label>
+              <label class="feedback__label feedback__label--impression title--middle" for="not-bad">Cкорее отрицательное</label>
             </div>
             <div class="feedback__impression">
               <input class="visually-hidden feedback__input feedback__input--impression" type="radio" name="impression" id="indifferently" value="indifferently">
-              <label class="feedback__label feedback__label--impression" for="indifferently">Затрудняюсь ответить</label>
+              <label class="feedback__label feedback__label--impression title--middle" for="indifferently">Затрудняюсь ответить</label>
             </div>
           </fieldset>
-          <fieldset class="feedback-section">
-            <legend class="feedback-section__title">Посещённые достопримечательности:</legend>
+          <fieldset class="feedback__section">
+            <legend class="feedback__title feedback__title--place title--middle">Посещённые достопримечательности:</legend>
             <div class="feedback__place">
               <input class="visually-hidden feedback__input feedback__input--place" type="checkbox" name="bridge" id="bridge" checked>
-              <label class="feedback__label feedback__label--place" for="bridge">Мост Дьявола</label>
+              <label class="feedback__label feedback__label--place title--middle" for="bridge">Мост Дьявола</label>
             </div>
             <div class="feedback__place">
               <input class="visually-hidden feedback__input feedback__input--place" type="checkbox" name="mountine" id="mountine" checked>
-              <label class="feedback__label feedback__label--place" for="mountine">Гора-колокол</label>
+              <label class="feedback__label feedback__label--place title--middle" for="mountine">Гора-колокол</label>
             </div>
             <div class="feedback__place">
               <input class="visually-hidden feedback__input feedback__input--place" type="checkbox" name="park" id="park" checked>
-              <label class="feedback__label feedback__label--place" for="park">Слайд-парк</label>
+              <label class="feedback__label feedback__label--place title--middle" for="park">Слайд-парк</label>
             </div>
             <div class="feedback__place">
               <input class="visually-hidden feedback__input feedback__input--place" type="checkbox" name="rock" id="rock">
-              <label class="feedback__label feedback__label--place" for="rock">Крассные скалы</label>
+              <label class="feedback__label feedback__label--place title--middle" for="rock">Крассные скалы</label>
             </div>
           </fieldset>
-          <fieldset class="feedback-section">
-            <legend class="feedback-section__title">Опишите свои эмоции:</legend>
+          <fieldset class="feedback__section">
+            <legend class="feedback__title feedback__title--emotion title--middle">Опишите свои эмоции:</legend>
             <div class="feedback__emotion">
-              <textarea class="feedback__textarea feedback__textarea--emotion" id="emotion" name="mail" placeholder="Опишите подробно все свои восторги" rows="5" cols="25"></textarea>
+              <textarea class="feedback__textarea feedback__textarea--emotion title--middle" id="emotion" name="mail" placeholder="Опишите подробно все свои восторги" rows="5" cols="25"></textarea>
             </div>
           </fieldset>
-          <fieldset class="feedback-section">
+          <fieldset class="feedback__section">
             <div class="feedback__buttom">
-              <button class="button feedback__button feedback__button--submit" type="submit">отправить отзыв</button>
+              <button class="btn btn--submit feedback__button feedback__button--submit" type="submit">отправить отзыв</button>
             </div>
           </fieldset>
         </form>
