@@ -1,3 +1,6 @@
+
+/* Описание состояний в page-main*/
+
 .page-main__promo--intro {
   min-height: 200px;
   padding-top: 40px;
@@ -24,6 +27,44 @@
   padding-bottom: 30px;
 }
 
+/* Описание состояний в page-main ^*/
+
+/* Описание состояний в page-main tablet*/
+
+@media (min-width: 768px){
+  .page-main {
+    min-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-main__feature {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-main__feature--rev {
+    flex-direction:row-reverse;
+  }
+
+  .page-main__feature--gray {
+    width: 256px;
+    height: 256px;
+    padding: 0px;
+  }
+
+  .page-main__promo--search {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Описание состояний в page-main tablet*/
+
+@media (min-width: 1200px){
+
+}
 /* стили в page-main в photo.html */
 
 .page-main__gallery-promo {

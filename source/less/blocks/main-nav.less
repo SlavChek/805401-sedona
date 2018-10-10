@@ -82,6 +82,9 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
+/*Описание состояний для блока main-nav ^*/
+
+/*Описание состояний для блока main-nav tablet*/
 
 @media (min-width: 768px){
   .main-nav {
@@ -89,17 +92,37 @@
     min-width: 768px;
   }
 
+  .main-nav__link {
+    width: 153px;
+    height: 58px;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
   .main-nav__list {
     display:flex;
     justify-content: space-between;
   }
 
-  .main-nav__link {
-    width: 153px;
+  .main-nav__item:not(:last-child),
+  .main-nav__item:not(:first-child){
+    border: 0px;
+  }
+
+  .main-nav__close,
+  .main-nav__open {
+    display:none;
   }
 
 }
+/*Описание состояний для блока main-nav tablet^*/
+
+/*Описание состояний для блока main-nav desktop*/
 
 @media (min-width: 1200px){
 
 }
+
+/*Описание состояний для блока main-nav desktop^*/
