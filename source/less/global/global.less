@@ -64,35 +64,6 @@ img {
   display: none;
 }
 
-@media (min-width: 768px){
-.wrapper{
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
-.content-wrapper{
-  padding: 0 60px;
-}
-.attention {
-  display: inline;
-}
-}
-
-@media (min-width: 1200px){
-.wrapper{
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
-.content-wrapper{
-  padding: 0px;
-}
-
-.attention {
-  display: inline;
-}
-}
-
 .title--small {
   font-size: 14px;
   line-height: 24px;
@@ -116,8 +87,6 @@ img {
 
 .btn {
   display: table-cell;
-  width: 280px;
-  height: 58px;
   background-color: #81b3d2;
   color: #ffffff;
   text-align: center;
@@ -127,6 +96,50 @@ img {
   line-height: 26px;
   border: 0px;
   text-transform: uppercase;
+}
+
+.btn--submit {
+  width: 280px;
+  height: 58px;
+}
+
+@media (min-width: 768px){
+.wrapper{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.content-wrapper{
+  padding: 0 60px;
+}
+.attention {
+  display: inline;
+}
+
+.btn--submit {
+  width: 324px;
+  height: 58px;
+}
+}
+
+@media (min-width: 1200px){
+.wrapper{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.content-wrapper{
+  padding: 0px;
+}
+
+.attention {
+  display: inline;
+}
+
+.btn--submit {
+  width: 480px;
+  height: 58px;
+}
 }
 
 /* Описание глобальных настроек */

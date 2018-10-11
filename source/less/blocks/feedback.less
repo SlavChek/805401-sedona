@@ -133,11 +133,64 @@
   width: 608px;
 }
 
-.feedback__buttom {
+.feedback__btn {
   width: 648px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+}
 
+@media (min-width: 1200px){
+  .feedback__form {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  }
+
+  .feedback__section--name {
+    width: 600px;
+    order: -5;
+  }
+
+  .feedback__section--contacts {
+    width: 1200px;
+    order: -4;
+  }
+
+  .feedback__input--contacts {
+    width: 1178px;
+  }
+
+  .feedback__section--impression {
+    width: 600px;
+    order: -6;
+  }
+
+  .feedback__section--place {
+    width: 1200px;
+  }
+
+.feedback__place-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback__place {
+  width: 300px;
+  text-align: center;
+}
+
+.feedback__textarea--emotion {
+  width: 1160px;
+}
+
+.feedback__btn {
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 }
