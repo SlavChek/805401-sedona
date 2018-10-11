@@ -35,19 +35,116 @@ img {
   height: auto;
 }
 
-header,
-main,
-footer {
-  width: 280px;
-  outline: 1px solid #ff43a4;
+.page-header,
+.page-main,
+.page-footer {
+  width: 320px;
 }
 
-section {
-  outline: 1px solid #ff43a4;
+.form-page .page-main {
+  line-height: 24px;
 }
 
 .main-container {
   margin:0 auto;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.page-main {
+  text-transform: uppercase;
+}
+
+.wrapper {
   padding-right: 20px;
   padding-left: 20px;
 }
+
+.attention {
+  display: none;
+}
+
+.title--small {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.title--middle {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.title--big {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.btn {
+  display: table-cell;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 26px;
+  border: 0px;
+  text-transform: uppercase;
+}
+
+.btn--search {
+  width: 280px;
+  height: 58px;
+}
+
+.btn--submit {
+  width: 280px;
+  height: 58px;
+}
+
+@media (min-width: 768px){
+.wrapper{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.content-wrapper{
+  padding: 0 60px;
+}
+.attention {
+  display: inline;
+}
+
+.btn--submit {
+  width: 324px;
+  height: 58px;
+}
+}
+
+@media (min-width: 1200px){
+.wrapper{
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+.content-wrapper{
+  padding: 0px;
+}
+
+.attention {
+  display: inline;
+}
+
+.btn--submit {
+  width: 480px;
+  height: 58px;
+}
+}
+
+/* Описание глобальных настроек */

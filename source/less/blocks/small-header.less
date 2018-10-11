@@ -1,4 +1,45 @@
+
+/* Описание состояний в small-header */
+
 .small-header {
+  min-height: 105px;
+  padding-top:55px;
   background-image: url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
+  background-position: 80% 80%;
+}
+
+.small-header__text {
+  margin: 0px 25px;
+}
+/* Описание состояний в small-header */
+
+/* Описание состояний в small-header tablet*/
+@media (min-width: 768px) {
+.small-header {
+  min-width: 768px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  min-height: 290px;
+  background-image: url(../img/bg-back-tablet@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+}
+/* Описание состояний в small-header tablet ^ */
+
+@media (min-width: 768px) {
+.small-header {
+  min-width: 768px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 0px;
+  min-height: 290px;
+  background-image: url(../img/bg-back-desktop@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
 }

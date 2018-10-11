@@ -1,0 +1,128 @@
+
+/*Описание состояний для блока main-nav*/
+
+.main-nav {
+  position: relative;
+  min-height: 280px;
+}
+.main-nav__link {
+  display: table-cell;
+  width: 320px;
+  height: 55px;
+  background-color: #81b3d2;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px
+}
+
+.main-nav__list {
+  .list-reset
+}
+
+.main-nav__item:not(:last-child){
+  border-bottom: solid 1px #678fa8;
+}
+
+.main-nav__item:not(:first-child){
+  border-top: solid 1px #9ac2db;
+}
+
+.main-nav__close {
+  position: absolute;
+ top: 20px;
+ right: 20px;
+ width: 22px;
+ height: 22px;
+ font-size: 0;
+ background-color: #81b3d2;
+ border: 0;
+ cursor: pointer;
+ outline: 0;
+}
+
+.main-nav__close::before,
+.main-nav__close::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0px;
+  width: 22px;
+  height: 4px;
+  background-color: #ffffff;
+}
+
+.main-nav__close::before {
+  transform: rotate(45deg);
+}
+
+.main-nav__close::after {
+  transform: rotate(-45deg);
+}
+
+.main-nav__open {
+  position: absolute;
+  padding: 0px;
+  top: 240px;
+  right: 0px;
+  font-size: 0px;
+  border: 0px;
+}
+
+.main-nav__open::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/icon-menu.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+/*Описание состояний для блока main-nav ^*/
+
+/*Описание состояний для блока main-nav tablet*/
+
+@media (min-width: 768px){
+  .main-nav {
+    min-height: 58px;
+    min-width: 768px;
+  }
+
+  .main-nav__link {
+    width: 153px;
+    height: 58px;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #ffffff;
+    color: #000000;
+  }
+
+  .main-nav__list {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__item:not(:last-child),
+  .main-nav__item:not(:first-child){
+    border: 0px;
+  }
+
+  .main-nav__close,
+  .main-nav__open {
+    display:none;
+  }
+
+}
+/*Описание состояний для блока main-nav tablet^*/
+
+/*Описание состояний для блока main-nav desktop*/
+
+@media (min-width: 1200px){
+
+}
+
+/*Описание состояний для блока main-nav desktop^*/

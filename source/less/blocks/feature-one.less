@@ -1,7 +1,83 @@
 
 /* Описание состояний в блоке feature-one */
 
-.feature-one__promo{
+.feature-one__promo {
+  min-height: 160px;
+  padding-top: 30px;
+  text-align: center;
   background-color: #81b3d2;
   color:#ffffff;
 }
+
+.feature-one__promo p {
+  margin-bottom: 0px;
+}
+
+.feature-one__img-block {
+  min-height: 260px;
+}
+
+.feature-one__fun-block {
+  min-height: 404px;
+  padding-top: 19px;
+}
+
+.feature-one__housing-block,
+.feature-one__souvenirs-block,
+.feature-one__food-block {
+  padding-left: 50px;
+}
+
+.feature-one__food-block p {
+  margin-bottom: 0px;
+}
+
+/* Описание состояний в блоке feature-one ^*/
+
+/* Описание состояний в блоке feature-one tablet*/
+
+@media (min-width: 768px){
+.feature-one__promo {
+  width: 256px;
+  height: 256px;
+  padding: 0px;
+}
+
+.feature-one__housing-block,
+.feature-one__souvenirs-block,
+.feature-one__food-block {
+  padding-left: 0px;
+}
+
+.feature-one__img-block {
+  width: 512px;
+  height: 256px;
+}
+
+.feature-one__fun-block {
+  display: flex;
+  min-height: auto;
+}
+}
+/* Описание состояний в блоке feature-one tablet ^*/
+
+/* Описание состояний в блоке feature-one desktop */
+@media (min-width: 1200px){
+.feature-one__promo {
+  width: 400px;
+  height: 256px;
+  padding: 0px;
+}
+
+.feature-one__img-block {
+  width: 800px;
+  heigh: 256px;
+}
+
+.feature-one__housing-block,
+.feature-one__souvenirs-block,
+.feature-one__food-block {
+  padding-left: 0px;
+}
+}
+/* Описание состояний в блоке feature-one desktop ^ */
