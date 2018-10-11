@@ -18,9 +18,38 @@
 
 /* Описания состояний в gellary-photo tablet */
 @media (min-width: 768px) {
+.gallery-photo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .gallery-photo__caption {
   display: flex;
   justify-content: space-between;
 }
+
+.gallery-photo__box {
+  width: 324px;
+  height: 267px;
+}
+
+.gallery-photo__box--1{
+  width: 648px;
+  height: 400px;
+}
 }
 /* Описания состояний в gellary-photo tablet */
+
+/* Описания состояний в gellary-photo desktop */
+@media (min-width: 1200px) {
+  .gallery-photo__box {
+    width: 400px;
+    height: 267px;
+  }
+
+  .gallery-photo__box--1{
+    width: 1200px;
+    height: 400px;
+  }
+}
+/* Описания состояний в gellary-photo desktop ^*/
