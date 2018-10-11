@@ -36,10 +36,10 @@
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.
         </p>
       </section>
-      <section class="feedback wrapper">
+      <section class="feedback wrapper content-wrapper">
         <h3 class="visually-hidden">Форма обратной связи</h3>
         <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="feedback__section">
+          <fieldset class="feedback__section feedback__section--name">
             <legend class="feedback__title feedback__title--name title--middle">представьтесь:</legend>
             <div class="feedback__name">
               <label class="feedback__label feedback__label--name" for="first-name">имя:*</label>
@@ -54,7 +54,7 @@
               <input class="feedback__input feedback__input--name title--middle" name="middle-name" id="middle-name" type="text" placeholder="Александрович">
             </div>
           </fieldset>
-          <fieldset class="feedback__section">
+          <fieldset class="feedback__section feedback__section--contacts">
             <legend class="feedback__title feedback__title--contacts title--middle">контактная информация:</legend>
             <div class="feedback__contacts">
               <label class="feedback__label feedback__label--contacts" for="phone">контактный телефон:*</label><br>
@@ -65,7 +65,7 @@
               <input class="feedback__input feedback__input--contacts title--middle" name="email" id="email" type="text" placeholder="Введите e-mail">
             </div>
           </fieldset>
-          <fieldset class="feedback__section">
+          <fieldset class="feedback__section feedback__section--impression">
             <legend class="feedback__title feedback__title--impression title--middle">Ваше общее впечатление:</legend>
             <div class="feedback__impression">
               <input class="visually-hidden feedback__input feedback__input--impression" type="radio" name="impression" id="good" value="good" checked>
@@ -80,8 +80,9 @@
               <label class="feedback__label feedback__label--impression title--middle" for="indifferently">Затрудняюсь ответить</label>
             </div>
           </fieldset>
-          <fieldset class="feedback__section">
+          <fieldset class="feedback__section feedback__section--place">
             <legend class="feedback__title feedback__title--place title--middle">Посещённые достопримечательности:</legend>
+            <div class="feedback__place-wrapper">
             <div class="feedback__place">
               <input class="visually-hidden feedback__input feedback__input--place" type="checkbox" name="bridge" id="bridge" checked>
               <label class="feedback__label feedback__label--place title--middle" for="bridge">Мост Дьявола</label>
@@ -98,17 +99,20 @@
               <input class="visually-hidden feedback__input feedback__input--place" type="checkbox" name="rock" id="rock">
               <label class="feedback__label feedback__label--place title--middle" for="rock">Крассные скалы</label>
             </div>
+          </div>
           </fieldset>
-          <fieldset class="feedback__section">
+          <fieldset class="feedback__section feedback__section--emotion">
             <legend class="feedback__title feedback__title--emotion title--middle">Опишите свои эмоции:</legend>
             <div class="feedback__emotion">
               <textarea class="feedback__textarea feedback__textarea--emotion title--middle" id="emotion" name="mail" placeholder="Опишите подробно все свои восторги" rows="5" cols="25"></textarea>
             </div>
           </fieldset>
-          <fieldset class="feedback__section">
+          <fieldset class="feedback__section feedback__section--buttom">
             <div class="feedback__buttom">
               <button class="btn btn--submit feedback__button feedback__button--submit" type="submit">отправить отзыв</button>
+              <span class="attention">*-обязательное поле</span>
             </div>
+
           </fieldset>
         </form>
       </section>
