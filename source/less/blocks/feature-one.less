@@ -5,8 +5,8 @@
   min-height: 160px;
   padding-top: 30px;
   text-align: center;
-  background-color: #81b3d2;
-  color:#ffffff;
+  background-color: @btn-color;
+  color:@text-color--inner;
 }
 
 .feature-one__promo p {
@@ -36,7 +36,7 @@
 
 /* Описание состояний в блоке feature-one tablet*/
 
-@media (min-width: 768px){
+@media (min-width:@tablet-width){
 .feature-one__promo {
   width: 256px;
   height: 256px;
@@ -62,7 +62,7 @@
 /* Описание состояний в блоке feature-one tablet ^*/
 
 /* Описание состояний в блоке feature-one desktop */
-@media (min-width: 1200px){
+@media (min-width:@desktop-width){
 .feature-one__promo {
   width: 400px;
   height: 256px;

@@ -22,7 +22,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
-  color: #333333;
+  color: @base-color;
   background: white;
 }
 
@@ -68,27 +68,27 @@ img {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
-  color: #000000;
+  color: @title-color;
 }
 
 .title--middle {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
-  color: #000000;
+  color: @title-color;
 }
 
 .title--big {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
-  color: #000000;
+  color: @title-color;
 }
 
 .btn {
   display: table-cell;
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: @btn-color;
+  color: @text-color--inner;
   text-align: center;
   vertical-align: middle;
   font-size: 18px;
@@ -108,7 +108,7 @@ img {
   height: 58px;
 }
 
-@media (min-width: 768px){
+@media (min-width:@tablet-width){
 .wrapper{
   padding-right: 0px;
   padding-left: 0px;
@@ -127,7 +127,7 @@ img {
 }
 }
 
-@media (min-width: 1200px){
+@media (min-width:@desktop-width){
 .wrapper{
   padding-right: 0px;
   padding-left: 0px;
