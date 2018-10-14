@@ -19,7 +19,12 @@
         </ul>
         <div class="page-header__logo">
           <a class="page-header__logo-link" href="index.html">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../img/logo-sedona-mobile.svg">
+              <source media="(max-width: 1199px)" srcset="../img/logo-sedona-tablet.svg">
+              <source media="(min-width: 1200px)" srcset="../img/logo-sedona-desktop.svg">
+              <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona">
+            </picture>
           </a>
         </div>
         <button class="button main-nav__open">МЕНЮ</button>
@@ -38,7 +43,14 @@
       <section class="gallery-photo">
         <h3 class="visually-hidden">Фото Sedona</h3>
         <figure class="gallery-photo__box gallery-photo__box--big wrapper">
-          <a class="gallery-photo__link" href="#"><img class="gallery-photo__img" src="img/photo-sunset-tablet@1x.jpg" width="280" height="280" alt="Пейзажи седоны"></a>
+          <a class="gallery-photo__link" href="#">
+            <picture>
+              <source media="(max-width: 767px)" srcset="../img/photo-sunset-mobile@1x.jpg">
+              <source media="(max-width: 1199px)" srcset="../img/photo-sunset-tablet@1x.jpg">
+              <source media="(min-width: 1200px)" srcset="../img/photo-sunset-desktop@1x.jpg">
+              <img class="gallery-photo__img" src="../img/photo-sunset-tablet@1x.jpg" width="280" height="280" alt="Пейзажи седоны">
+            </picture>
+          </a>
           <figcaption class="gallery-photo__caption">
             <div class="gallary-photo__wrapper">
               <p class="gallery-photo__title title--small">неродные просторы</p>
