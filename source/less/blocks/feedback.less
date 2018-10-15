@@ -57,6 +57,46 @@
 .feedback__title--impression {
   margin-bottom: 20px;
 }
+
+.feedback__label--impression{
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.feedback__input--impression:checked + label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 46px;
+  height: 46px;
+  background-color: @input-color;
+  border-radius: 25px;
+}
+
+.feedback__input--impression:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  width: 16px;
+  height: 16px;
+  background-color: @base-color;
+  border-radius: 25px;
+}
+
+.feedback__input--impression:not(:checked) + label::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 46px;
+  height: 46px;
+  background-color: @input-color;
+  border-radius: 25px;
+}
+
 .feedback__label--place,
 .feedback__label--impression {
   padding-left: 80px;
@@ -69,6 +109,59 @@
 
 .feedback__place {
   margin: 32px 0px;
+}
+
+.feedback__label--place {
+  position: relative;
+  display: block;
+}
+
+.feedback__input--place:checked + label::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 5px;
+  background-color: @input-color;
+}
+
+.feedback__input--place:checked + label::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 22px;
+  width: 24px;
+  height: 16px;
+  border-radius: 5px;
+  background-image: url(../img/icon-tick.svg);
+  background-position: 0 0;
+}
+
+
+.feedback__input--place:not(:checked) + label::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 5px;
+  background-color: @input-color;
+  background-position: 0 0;
+}
+
+.feedback__input--place:not(:checked) + label::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  width: 46px;
+  height: 46px;
+  border-radius: 5px;
+  background-color: @input-color;
+  background-position: 0 0;
 }
 
 .feedback__title--emotion {
