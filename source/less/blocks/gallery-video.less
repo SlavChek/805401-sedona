@@ -10,6 +10,76 @@
   padding-top: 22px;
   padding-bottom: 38px;
 }
+
+/*castom player*/
+.gallery-video__img {
+  width: 321px;
+  height: 201px;
+}
+
+.gallery-video__box--castom {
+  position: relative;
+
+}
+
+.gallery-video__control--castom {
+  width: 280px;
+  height: 66px;
+  position: absolute;
+  top: 200px;
+  left: 20px;
+  background-color: @input-color;
+}
+.gallery-video__bar {
+  position: absolute;
+  top: -45px;
+  left: 0px;
+  width: 280px;
+  height: 45px;
+  background-color: @video-bar;
+}
+
+.gallery-video__bar::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  width: 235px;
+  height: 3px;
+  background-color: @text-color--inner;
+  opacity: 0.2;
+}
+
+.gallery-video__bar::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 55px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: @text-color--inner;
+}
+
+.gallery-video__button {
+  border: 0px;
+  background-color: transparent;
+  fill: @btn-video;
+}
+
+.gallery-video__button--replay {
+  margin: 22px 117px  24px 25px;
+}
+
+.gallery-video__button--subtitles {
+  margin: 23px 22px 23px 0px;
+}
+
+.gallery-video__button--fullscreen {
+  margin: 22px 0px;
+}
+/*castom player*/
+
 /* Описание состояний в gallery-video ^ */
 
 /* Описание состояний в gallery-video tablet */
@@ -17,5 +87,157 @@
 .gallery-video__text {
   text-align: center;
 }
+
+.gallery-video__controls {
+  width: 648px;
+  height: 499px;
+}
+
+/*castom player*/
+.gallery-video__img {
+  width: 648px;
+  height: 499px;
+}
+
+.gallery-video__box--castom {
+  position: relative;
+}
+
+.gallery-video__control--castom {
+  width: 648px;
+  height: 93px;
+  position: absolute;
+  top: 406px;
+  left: 0px;
+  background-color: @video-bar;
+}
+.gallery-video__bar {
+  position: absolute;
+  top: 25px;
+  left: 52px;
+  width: 410px;
+  height: 45px;
+  background-color: transparent;
+}
+
+.gallery-video__bar::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  width: 389px;
+  height: 3px;
+  background-color: @text-color--inner;
+  opacity: 0.2;
+}
+
+.gallery-video__bar::after {
+  content: "";
+  position: absolute;
+  top: 17px;
+  left: 55px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background-color: @text-color--inner;
+}
+
+.gallery-video__button {
+  border: 0px;
+  background-color: transparent;
+  fill: @text-color--inner
+}
+
+.gallery-video__button--replay {
+  margin: 35px 420px  38px 35px;
+}
+
+.gallery-video__button--subtitles {
+  margin: 36px 31px 37px 0px;
+}
+
+.gallery-video__button--fullscreen {
+  margin: 36px 41px 37px 0px;
+}
+/*castom player*/
 }
 /* Описание состояний в gallery-video tablet  ^*/
+
+/* Описание состояний в gallery-video desktop */
+@media (min-width:@desktop-width) {
+  .gallery-video__controls {
+    width: 800px;
+    height: 500px;
+    margin: auto 200px;
+  }
+  /*castom player*/
+  .gallery-video__img {
+    width: 800px;
+    height: 500px;
+  }
+
+  .gallery-video__box--castom {
+    position: relative;
+    margin: 0px 200px;
+  }
+
+  .gallery-video__control--castom {
+    width: 800px;
+    height: 93px;
+    position: absolute;
+    top: 406px;
+    left: 0px;
+    background-color: @video-bar;
+  }
+  .gallery-video__bar {
+    position: absolute;
+    top: 25px;
+    left: 52px;
+    width: 580px;
+    height: 45px;
+    background-color: transparent;
+  }
+
+  .gallery-video__bar::before {
+    content: "";
+    width: 540px;
+    height: 3px;
+    position: absolute;
+    top: 20px;
+    left: 22px;
+    background-color: @text-color--inner;
+    opacity: 0.2;
+  }
+
+  .gallery-video__bar::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 17px;
+    left: 55px;
+    border-radius: 5px;
+    background-color: @text-color--inner;
+  }
+
+  .gallery-video__button {
+    border: 0px;
+    background-color: transparent;
+    fill: @text-color--inner
+  }
+
+  .gallery-video__button--replay {
+    margin: 35px 580px 38px 35px;
+  }
+
+  .gallery-video__button--subtitles {
+    margin: 36px 31px 37px 0px;
+  }
+
+  .gallery-video__button--fullscreen {
+    margin: 36px 41px 37px 0px;
+  }
+  /*castom player*/
+}
+
+/* Описание состояний в gallery-video desktop ^*/
