@@ -25,7 +25,7 @@
 .feedback__input {
   flex-grow: 1;
   height: 58px;
-  padding-left: 22px;
+  padding: 0px 0px 0px 22px;
   background-color: @input-color;
   color: @title-color;
   border: 0px;
@@ -36,33 +36,43 @@
   line-height: 26px;
 }
 .feedback__input--contacts {
-  width: 258px;
+  width: 140px;
   margin-top: 14px;
   margin-bottom: 20px;
+  padding-right: 20px;
 }
 
-.feedback__input--phone {
+.feedback__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  align-items:center;
+}
+
+.feedback__label--phone {
+  margin-bottom: 5px;
   width: 58px;
   height: 58px;
   background-image: url(../img/icon-phone.svg);
-  background-color: red;
-  background-size: auto;
+  background-color: @input-color--label;
+  background-size: 18px 18px;
   background-repeat: no-repeat;
-  background-position: 240px;;
+  background-position: center;
 }
 
-.feedback__input--email {
+.feedback__label--email {
+  margin-bottom: 5px;
+  width: 58px;
+  height: 58px;
   background-image: url(../img/icon-mail.svg);
-  background-size: auto;
+  background-color: @input-color--label;
+  background-size: 18px 18px;
   background-repeat: no-repeat;
-  background-position: 240px;
+  background-position: center;
 }
 
 .feedback__label--contacts {
   margin-left: 22px;
 }
-
-
 
 .feedback__impression {
   margin: 26px 0px;
@@ -200,7 +210,6 @@
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
   }
 
   .feedback__section--name {
@@ -214,7 +223,16 @@
   }
 
   .feedback__input--contacts {
-    width: 648px;
+    width: 548px;
+    padding-right: 20px;
+  }
+
+  .feedback__label--phone {
+    margin-bottom: 6px;
+  }
+
+  .feedback__label--email {
+    margin-bottom: 6px;
   }
 
   .feedback__section--impression {
@@ -249,35 +267,54 @@
 }
 
 @media (min-width:@desktop-width){
-  .feedback__form {
-    display:flex;
-    flex-wrap: wrap;
+.feedback__form {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.feedback__section--name {
+  width: 600px;
+  order: -5;
+}
+
+.feedback__section--contacts {
+
+  display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    width: 100%
+}
 
-  }
+.feedback__title--contacts {
+  margin-bottom: 32px;
+}
 
-  .feedback__section--name {
-    width: 600px;
-    order: -5;
-  }
+.feedback__contacts{
+  width: 400px;
+}
 
-  .feedback__section--contacts {
-    width: 1200px;
-    order: -4;
-  }
+.feedback__input--contacts {
+  width: 200px;
+  padding-right: 20px;
+}
 
-  .feedback__input--contacts {
-    width: 1178px;
-  }
+.feedback__label--phone {
+  margin-bottom: 6px;
+}
 
-  .feedback__section--impression {
-    width: 600px;
-    order: -6;
-  }
+.feedback__label--email {
+  margin-bottom: 6px;
+}
 
-  .feedback__section--place {
-    width: 1200px;
-  }
+.feedback__section--impression {
+  width: 600px;
+  order: -6;
+}
+
+.feedback__section--place {
+  width: 1200px;
+}
 
 .feedback__place-wrapper {
   display: flex;
