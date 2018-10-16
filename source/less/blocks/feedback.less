@@ -26,7 +26,6 @@
   flex-grow: 1;
   height: 58px;
   padding-left: 22px;
-
   background-color: @input-color;
   color: @title-color;
   border: 0px;
@@ -36,22 +35,34 @@
   width:100px;
   line-height: 26px;
 }
-
-.feedback__input--contacts {
-  background-image: url(../img/icon-phone.svg);
-  background-color: #e6e6e6;
-  background-repeat: no-repeat;
-  background-position: 50%;
-}
-
-.feedback__label--contacts {
-  margin-left: 22px;
-}
 .feedback__input--contacts {
   width: 258px;
   margin-top: 14px;
   margin-bottom: 20px;
 }
+
+.feedback__input--phone {
+  width: 58px;
+  height: 58px;
+  background-image: url(../img/icon-phone.svg);
+  background-color: red;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 240px;;
+}
+
+.feedback__input--email {
+  background-image: url(../img/icon-mail.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: 240px;
+}
+
+.feedback__label--contacts {
+  margin-left: 22px;
+}
+
+
 
 .feedback__impression {
   margin: 26px 0px;
