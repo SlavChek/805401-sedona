@@ -9,8 +9,8 @@
   display: table-cell;
   width: 320px;
   height: 55px;
-  background-color: #81b3d2;
-  color: #ffffff;
+  background-color: @btn-color;
+  color: @text-color--inner;
   text-align: center;
   vertical-align: middle;
   font-size: 18px;
@@ -18,16 +18,25 @@
   line-height: 40px
 }
 
+.main-nav__link:hover {
+  background-color: @btn-color--hover;
+}
+
+.main-nav__link:active {
+  background-color: @btn-color--active;
+  color: @text-color--down-w;
+}
+
 .main-nav__list {
   .list-reset
 }
 
 .main-nav__item:not(:last-child){
-  border-bottom: solid 1px #678fa8;
+  border-bottom: solid 1px @border-b-color;
 }
 
 .main-nav__item:not(:first-child){
-  border-top: solid 1px #9ac2db;
+  border-top: solid 1px @border-t-color;
 }
 
 .main-nav__close {
@@ -37,7 +46,7 @@
  width: 22px;
  height: 22px;
  font-size: 0;
- background-color: #81b3d2;
+ background-color: transparent;
  border: 0;
  cursor: pointer;
  outline: 0;
@@ -99,6 +108,16 @@
     line-height: 26px;
     background-color: #ffffff;
     color: #000000;
+  }
+
+  .main-nav__link:hover {
+    background-color: transparent;
+    color: @btn-color;
+  }
+
+  .main-nav__link:active {
+    background-color: transparent;
+    color: @text-color--down;
   }
 
   .main-nav__list {
