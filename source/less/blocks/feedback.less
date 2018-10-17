@@ -10,6 +10,7 @@
 .feedback__title {
   text-align: center;
 }
+
 .feedback__title--name {
   margin-bottom: 12px;
 }
@@ -19,9 +20,11 @@
   align-items: baseline;
   padding: 10px 0px;
 }
+
 .feedback__label--name {
   margin-right: 14px;
 }
+
 .feedback__input {
   flex-grow: 1;
   height: 58px;
@@ -130,6 +133,23 @@
   background-color: @input-color;
   border-radius: 25px;
 }
+
+.feedback__input--impression:checked:hover + label::before,
+.feedback__input--impression:not(:checked):hover + label::after{
+  background-color: @btn-color--disabled;
+}
+
+.feedback__input--impression:checked:active + label::before,
+.feedback__input--impression:not(:checked):active + label::after{
+  background-color: @input-color--down;
+}
+
+.feedback__input--impression:checked:active + label::after{
+  background-color: @base-color;
+  opacity: 0.3;
+}
+
+
 
 .feedback__label--place,
 .feedback__label--impression {
