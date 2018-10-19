@@ -12,6 +12,19 @@
 
 .gallery-photo__like {
   padding-left: 35px;
+  position: relative;
+}
+
+.gallery-photo__like::before {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 20px;
+  top: 5;
+  left: 0;
+  background-image: url(../img/icon-like.svg);
+  opacity: 0.3;
+
 }
 
 /* Описания состояний в gellary-photo ^ */
@@ -102,5 +115,12 @@
 .gallery-photo__like {
   color: @text-color--inner;
 }
+
+.gallery-photo__like::before {
+  fill: @text-color--inner;
+}
+
+
+
 }
 /* Описания состояний в gellary-photo desktop ^*/
