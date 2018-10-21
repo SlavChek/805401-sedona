@@ -30,12 +30,26 @@
   background-repeat: no-repeat;
   background-position: 50% bottom;
   background-size: auto;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/bg-intro-triangle-desktop.svg),url("../img/bg-back-tablet@2x.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% bottom;
+        background-size:auto, 100%;
+      }
 }
 
 .small-header__text {
   width: 458px;
   height: 78px;
 }
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi),
+       (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .big-header {
+    background-image: url(../img/bg-intro-triangle-desktop.svg),url("../img/bg-back-tablet@2x.jpg");
+    background-size: 100% cover;
+  }
 }
 /* Описание состояний в small-header tablet ^ */
 
