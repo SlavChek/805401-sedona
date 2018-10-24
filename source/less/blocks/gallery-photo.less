@@ -10,21 +10,15 @@
   height: 280px;
 }
 
-.gallery-photo__like {
-  padding-left: 35px;
+.gallery-photo__stat {
+  padding-left: 14px;
   position: relative;
 }
 
-.gallery-photo__like::before {
-  position: absolute;
-  content: "";
-  width: 22px;
-  height: 20px;
-  top: 5;
-  left: 0;
-  background-image: url(../img/icon-like.svg);
+.gallery-photo__like {
+  width: 23px;
+  height: 21px;
   opacity: 0.3;
-
 }
 
 /* Описания состояний в gellary-photo ^ */
@@ -71,9 +65,15 @@
   margin: 8px auto 14px 21px;
 }
 
-.gallery-photo__like {
-  margin: 28px 22px 28px 0px;
-  padding-left: 35px;
+.gellary-photo__like-box {
+  width: 70px;
+  height: 35px;
+  margin-top: 25px;
+  margin-right: 21px;
+}
+
+.gallery-photo__stat {
+  padding-left: 9px;
 }
 }
 /* Описания состояний в gellary-photo tablet */
@@ -113,12 +113,14 @@
 }
 
 .gallery-photo__like {
+  fill: @text-color--inner;
+  opacity: 1;
+}
+
+.title--small {
   color: @text-color--inner;
 }
 
-.gallery-photo__like::before {
-  fill: @text-color--inner;
-}
 
 
 
