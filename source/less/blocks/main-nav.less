@@ -96,57 +96,60 @@
 /*Описание состояний для блока main-nav tablet*/
 
 @media (min-width:@tablet-width){
-  .main-nav {
-    min-height: 58px;
-    min-width: 768px;
-  }
+.main-nav {
+  min-height: 58px;
+  min-width: 768px;
+}
+.main-nav__item:nth-child(3) {
+  margin-left: 160px;
+}
 
-  .main-nav__link {
-    width: 153px;
-    height: 58px;
-    font-size: 14px;
-    line-height: 26px;
-    background-color: #ffffff;
-    color: #000000;
-  }
+.main-nav__link {
+  width: 153px;
+  height: 58px;
+  font-size: 14px;
+  line-height: 26px;
+  background-color: #ffffff;
+  color: #000000;
+}
 
-  .main-nav__link:hover {
-    background-color: transparent;
-    color: @btn-color;
-  }
+.main-nav__link:hover {
+  background-color: transparent;
+  color: @btn-color;
+}
 
-  .main-nav__link:active {
-    background-color: transparent;
-    color: @text-color--down;
-  }
+.main-nav__link:active {
+  background-color: transparent;
+  color: @text-color--down;
+}
 
-  .main-nav__link--active {
-    color: @text-color--active;
-  }
+.main-nav__link--active {
+  color: @text-color--active;
+}
 
-  .main-nav__link--active:hover {
-    color: @text-color--hover;
-  }
+.main-nav__link--active:hover {
+  color: @text-color--hover;
+}
 
 
-  .main-nav__link--active:active {
-    color: @text-color--dactive;
-  }
+.main-nav__link--active:active {
+  color: @text-color--dactive;
+}
 
-  .main-nav__list {
-    display:flex;
-    justify-content: space-between;
-  }
+.main-nav__list {
+  display:flex;
+  justify-content: space-between;
+}
 
-  .main-nav__item:not(:last-child),
-  .main-nav__item:not(:first-child){
-    border: 0px;
-  }
+.main-nav__item:not(:last-child),
+.main-nav__item:not(:first-child){
+  border: 0px;
+}
 
-  .main-nav__close,
-  .main-nav__open {
-    display:none;
-  }
+.main-nav__close,
+.main-nav__open {
+  display:none;
+}
 
 }
 /*Описание состояний для блока main-nav tablet^*/
