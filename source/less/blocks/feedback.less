@@ -48,6 +48,11 @@
   width:100px;
   line-height: 26px;
 }
+
+.feedback__section--contacts {
+  margin-bottom: 40px;
+}
+
 .feedback__input--contacts {
   width: 140px;
   margin-top: 14px;
@@ -72,6 +77,10 @@
   background-position: center;
 }
 
+.feedback__label--phone {
+  margin: 5px 0px 0px 0px;
+}
+
 .feedback__label--email {
   margin-bottom: 5px;
   width: 58px;
@@ -83,16 +92,29 @@
   background-position: center;
 }
 
+.feedback__label--email {
+  margin: 4px 0px 0px 0px;
+}
+
 .feedback__label--contacts {
+  margin-top: 5px;
   margin-left: 22px;
 }
 
+.feedback__input--contacts {
+  margin: 10px 0px 6px 0px;
+}
+
+.feedback__section--impression {
+  margin-bottom: 0px;
+}
+
 .feedback__impression {
-  margin: 26px 0px;
+  margin: 26px 0px 44px 0px;
 }
 
 .feedback__title--impression {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .feedback__label--impression{
@@ -104,21 +126,21 @@
 .feedback__input--impression:checked + label::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 10px;
-  width: 46px;
-  height: 46px;
+  top: -11px;
+  left: 2px;
+  width: 52px;
+  height: 52px;
   background-color: @input-color;
-  border-radius: 25px;
+  border-radius: 45px;
 }
 
 .feedback__input--impression:checked + label::after {
   content: "";
   position: absolute;
   top: 5px;
-  left: 25px;
-  width: 16px;
-  height: 16px;
+  left: 18px;
+  width: 20px;
+  height: 20px;
   background-color: @base-color;
   border-radius: 25px;
 }
@@ -126,12 +148,12 @@
 .feedback__input--impression:not(:checked) + label::after {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 10px;
-  width: 46px;
-  height: 46px;
+  top: -11px;
+  left: 2px;
+  width: 52px;
+  height: 52px;
   background-color: @input-color;
-  border-radius: 25px;
+  border-radius: 45px;
 }
 
 .feedback__input--impression:checked:hover + label::before,
@@ -147,6 +169,10 @@
 .feedback__input--impression:checked:active + label::after{
   background-color: @base-color;
   opacity: 0.3;
+}
+
+.feedback__section--place {
+  margin-bottom: 0px;
 }
 
 .feedback__input--place:checked:hover + label::before,
@@ -174,7 +200,7 @@
 }
 
 .feedback__place {
-  margin: 32px 0px;
+  margin: 12px 0px 55px 0px;
 }
 
 .feedback__label--place {
@@ -185,10 +211,10 @@
 .feedback__input--place:checked + label::before {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 10px;
-  width: 46px;
-  height: 46px;
+  top: -13px;
+  left: 0px;
+  width: 55px;
+  height: 55px;
   border-radius: 5px;
   background-color: @input-color;
 }
@@ -196,8 +222,8 @@
 .feedback__input--place:checked + label::after {
   content: "";
   position: absolute;
-  top: 5px;
-  left: 22px;
+  top: 6px;
+  left: 18px;
   width: 24px;
   height: 16px;
   border-radius: 5px;
@@ -209,44 +235,37 @@
 .feedback__input--place:not(:checked) + label::after {
   content: "";
   position: absolute;
-  top: -10px;
-  left: 10px;
-  width: 46px;
-  height: 46px;
-  border-radius: 5px;
-  background-color: @input-color;
-  background-position: 0 0;
-}
-
-.feedback__input--place:not(:checked) + label::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 10px;
-  width: 46px;
-  height: 46px;
+  top: -13px;
+  left: 0px;
+  width: 55px;
+  height: 55px;
   border-radius: 5px;
   background-color: @input-color;
   background-position: 0 0;
 }
 
 .feedback__title--emotion {
+  margin-top: 2px;
   margin-bottom: 21px;
 }
 
 .feedback__emotion {
-  margin-bottom: 39px;
+  margin-bottom: 25px;
 }
 
 .feedback__textarea {
   width: 234px;
-  height: 120px;
-  padding: 20px 20px;
+  height: 135px;
+  padding: 10px 20px;
   background-color: @input-color;
 }
 
 .feedback__textarea:hover {
   background-color: @btn-color--disabled;
+}
+
+.feedback__button--submit {
+  font-size: 21px;
 }
 
 .feedback__textarea:focus {
