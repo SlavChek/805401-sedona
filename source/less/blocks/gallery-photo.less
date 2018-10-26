@@ -81,16 +81,20 @@
 
 /* Описания состояний в gellary-photo desktop */
 @media (min-width:@desktop-width) {
-  .gallery-photo__box {
-    width: 400px;
-    height: 267px;
-    position: relative;
-  }
+.gallery-photo {
+  margin-bottom: 82px;
+}
 
-  .gallery-photo__box--big{
-    width: 1200px;
-    height: 400px;
-  }
+.gallery-photo__box {
+  width: 400px;
+  height: 267px;
+  position: relative;
+}
+
+.gallery-photo__box--big{
+  width: 1200px;
+  height: 400px;
+}
 
 .gallery-photo__caption {
   position: absolute;
@@ -110,7 +114,16 @@
 }
 
 .gallery-photo__title {
+  margin: 19px auto 2px 22px;
   color: @text-color--inner;
+}
+
+.gallery-photo__author {
+  margin: 2px auto 14px 21px;
+}
+
+.gellary-photo__like-box {
+  margin-top: 28px;
 }
 
 .gallery-photo__like {
