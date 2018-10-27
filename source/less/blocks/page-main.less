@@ -36,9 +36,21 @@
 
 @media (min-width:@tablet-width){
 .page-main {
+  position: relative;
   min-width: 768px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.page-main::before {
+  content: "";
+  position: absolute;
+  top: 230px;
+  right: 383px;
+  width: 1px;
+  height: 292px;
+  background-color: @input-color;
+
 }
 
 .page-main__promo--intro {
@@ -99,6 +111,17 @@
 @media (min-width:@desktop-width){
 .page-main {
   min-width: 1200px;
+}
+
+.page-main::before {
+  content: "";
+  position: absolute;
+  top: 196px;
+  right: 600px;
+  width: 1px;
+  height: 292px;
+  background-color: @input-color;
+
 }
 
 .page-main__promo--intro {
