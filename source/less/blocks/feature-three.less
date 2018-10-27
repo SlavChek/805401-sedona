@@ -4,10 +4,43 @@
 .feature-three {
   min-height: 153px;
   padding-top: 15px;
-  background-color: #eeeeee;
+  background-color: @bg-color--inner;
   text-align: center;
 }
 
+.feature-three__text {
+  margin: auto 20px;
+}
+
+.feature-three h2 {
+  margin: 10px auto ;
+}
+
 .feature-three p {
-  margin-bottom: 0px;
+  margin-bottom: 30px;
+}
+
+@media (min-width:@tablet-width) {
+
+.feature-three h2 {
+  margin: 0px 0px 10px 0px;
+  padding: 0px 10px;
+}
+
+.feature-three p {
+  margin: 20px 0px 15px 0px;
+  padding: 0px 20px;
+}
+}
+
+@media (min-width:@desktop-width) {
+
+.feature-three__text {
+  margin-top: 34px;
+}
+
+.feature-three h2 {
+  margin: 0px 0px 10px 0px;
+  padding: 0px 70px;
+}
 }

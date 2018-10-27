@@ -4,18 +4,21 @@
 .small-header {
   min-height: 105px;
   padding-top:55px;
-  background-image: url(../img/bg-back-mobile@1x.jpg);
+  background-image: url(../img/bg-intro-triangle-mobile.svg),url(../img/bg-back-mobile@1x.jpg);
   background-repeat: no-repeat;
-  background-position: 80% 80%;
+  background-position: 50% bottom;
+  background-size: cover;
 }
 
 .small-header__text {
+  width: 229px;
+  height: 39px;
   margin: 0px 25px;
 }
 /* Описание состояний в small-header */
 
 /* Описание состояний в small-header tablet*/
-@media (min-width: 768px) {
+@media (min-width:@tablet-width) {
 .small-header {
   min-width: 768px;
   display: flex;
@@ -23,23 +26,54 @@
   align-items: center;
   padding-top: 0px;
   min-height: 290px;
-  background-image: url(../img/bg-back-tablet@1x.jpg);
+  background-image: url(../img/bg-intro-triangle-desktop.svg),url(../img/bg-back-tablet@1x.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% bottom;
+  background-size: auto;
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url(../img/bg-intro-triangle-desktop.svg),url("../img/bg-back-tablet@2x.jpg");
+        background-repeat: no-repeat;
+        background-position: 50% bottom;
+        background-size:auto, 100%;
+      }
 }
+
+.small-header__text {
+  width: 458px;
+  height: 78px;
+  padding-bottom: 20px;
+}
+}
+
+@media (min-width: 768px) and (min-resolution: 144dpi),
+       (min-width: 768px) and (min-resolution: 1.5dppx) {
+  .big-header {
+    background-image: url(../img/bg-intro-triangle-desktop.svg),url("../img/bg-back-tablet@2x.jpg");
+    background-size: 100% cover;
+  }
 }
 /* Описание состояний в small-header tablet ^ */
 
-@media (min-width: 768px) {
+@media (min-width:@desktop-width) {
 .small-header {
-  min-width: 768px;
+  min-width: 1200px;
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 0px;
   min-height: 290px;
-  background-image: url(../img/bg-back-desktop@1x.jpg);
+  background-image: url(../img/bg-intro-triangle-desktop.svg),url(../img/bg-back-desktop@1x.jpg);
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: 50% bottom;
+  background-size: auto;
+}
+
+.photo-page .small-header {
+  min-height: 301px;
+}
+
+.small-header__text {
+  width: 461px;
+  height: 80px;
 }
 }

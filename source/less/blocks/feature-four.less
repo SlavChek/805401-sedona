@@ -4,10 +4,43 @@
 .feature-four {
   min-height: 153px;
   padding-top: 15px;
-  background-color: #eeeeee;
+  background-color: @bg-color--inner;
   text-align: center;
+}
+
+.feature-four__text{
+  margin:auto;
+  padding: 5px 20px 30px 20px;
+
+}
+
+.feature-four h2 {
+  margin: 6px;
 }
 
 .feature-four p {
   margin-bottom: 0px;
+}
+
+@media (min-width:@tablet-width) {
+
+.feature-four__text {
+  margin: 0px;
+  padding: 0px;
+}
+
+.feature-four__text h2 {
+  margin: 30px 6px 10px 6px;
+  padding: 0px 35px;
+}
+
+.feature-four p {
+  margin: 22px 55px 0px 55px;
+}
+}
+
+@media (min-width:@desktop-width) {
+  .feature-four__text h2 {
+    padding: 0px 120px;
+  }
 }

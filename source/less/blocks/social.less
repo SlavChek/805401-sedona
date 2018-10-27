@@ -5,23 +5,38 @@
 }
 
 .social__list {
-  .list-reset;
+.list-reset;
   margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   display:flex;
   width: 156px;
   height: 48px;
 }
 
-.social__link{
+.social__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 46px;
   height: 48px;
-  margin-right: 6px;
+  margin-right: 7px;
   font-size: 0px;
   vertical-align: middle;
-  background-color: #81b3d2;
-  fill: #ffffff;
+  background-color: @btn-color;
+  fill: @text-color--inner;
+}
+
+.social__link:hover {
+  background-color: @btn-color--hover;
+}
+
+.social__link:active {
+  background-color: @btn-color--active;
+  fill:@text-color--down-w;
+}
+
+@media (min-width:@tablet-width) {
+.social {
+  margin-top: 0px;
+}
 }

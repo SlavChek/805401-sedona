@@ -3,11 +3,56 @@
 
 .feature-five {
   min-height: 153px;
-  padding-top: 15px;
-  background-color: #eeeeee;
+  padding-bottom: 10px;
+  background-color: @bg-color--inner;
   text-align: center;
+}
+
+.feature-five__text {
+  margin:auto;
+  padding: 14px 15px 10px 15px;
+}
+
+.feature-five h2 {
+  margin: 10px;
 }
 
 .feature-five p {
   margin-bottom: 0px;
+}
+
+@media (min-width:@tablet-width) {
+
+.feature-five {
+  padding: 15px 0px 0px 0px;
+}
+
+.feature-five__text {
+  margin: 30px 10px 10px 10px;
+  padding: 0px 40px;
+}
+
+.feature-five h2 {
+  margin: 0px 10px 10px 10px;
+}
+
+.feature-five p {
+  margin-top: 20px;
+}
+}
+
+@media (min-width:@desktop-width) {
+
+  .feature-five__text {
+    margin: 30px 10px 10px 10px;
+
+  }
+
+.feature-five__text h2 {
+  padding: 0px 120px;
+}
+
+.feature-five__text p {
+  padding: 0px 20px;
+}
 }
