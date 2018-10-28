@@ -4,6 +4,7 @@ var gulp = require("gulp");
 var less = require("gulp-less");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
+var rename = require("gulp-rename");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var csso = require('gulp-csso');
@@ -18,6 +19,7 @@ gulp.task("css", function () {
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream())
     .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(gulp.dest("source/css"));
 });
 
