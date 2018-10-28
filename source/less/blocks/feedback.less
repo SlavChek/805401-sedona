@@ -281,13 +281,24 @@
   justify-content: space-between;
 }
 
+.feedback__input {
+  font-size: 18px;
+}
+
 .feedback__section--name {
-  width: 323px;
+  width: 270px;
   order: -5;
+}
+
+.feedback__title--name {
+  margin-bottom: 45px;
+  padding: 5px 105px 0px 0px;
 }
 
 .feedback__section--contacts {
   width: 648px;
+  margin-top: 10px;
+  margin-bottom: 19px;
   order: -4;
 }
 
@@ -316,20 +327,37 @@
 
 .feedback__input--contacts {
   width: 548px;
+  margin-bottom: 16px;
   padding-right: 20px;
 }
 
 .feedback__label--phone {
+  margin-top: 0px;
   margin-bottom: 6px;
 }
 
 .feedback__label--email {
+  margin-top: 0px;
   margin-bottom: 6px;
 }
 
 .feedback__section--impression {
-  width: 323px;
+  width: 300px;
   order: -6;
+}
+
+.feedback__impression {
+  margin-top: 8px;
+  margin-bottom: 55px;
+}
+
+.feedback__title--impression {
+  margin-bottom: 65px;
+  padding: 5px 25px 0px 0px;
+}
+
+.feedback__label--impression {
+  font-size: 18px;
 }
 
 .feedback__section--place {
@@ -365,11 +393,30 @@
 }
 
 .feedback__place {
-  width: 324px;
+  width: 260px;
   text-align: center;
 }
 
+.feedback__place:nth-child(n+3){
+  margin-top: 5px;
+}
+
+.feedback__place-wrapper {
+  margin: 25px 30px 28px 95px;
+  justify-content: center;
+}
+
+.feedback__label--place {
+  padding-left: 0px;
+  font-size: 18px;
+}
+
+.feedback__emotion {
+  margin-bottom: 35px;
+}
+
 .feedback__title--emotion {
+  margin-bottom: 58px;
   display: flex;
   align-items: center;
 }
@@ -394,6 +441,7 @@
 
 .feedback__textarea--emotion {
   width: 608px;
+  font-size: 18px;
 }
 
 .feedback__btn {
@@ -401,6 +449,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.feedback__section--buttom {
+  margin-bottom: 20px;
 }
 }
 
@@ -419,17 +471,22 @@
 }
 
 .feedback__section--name {
-  width: 480px;
+  width: 400px;
   order: -5;
 }
 
+.feedback__title--name {
+  padding-right: 240px;
+}
+
 .feedback__section--contacts {
+  margin-top: 5px;
   width: 960px;
   display: flex;
 }
 
 .feedback__title--contacts {
-  margin-bottom: 32px;
+  margin-bottom: 65px;
 }
 
 .feedback__title--contacts::before,
@@ -444,18 +501,25 @@
 }
 
 .feedback__input--contacts {
-  width: 190px;
+  width: 212px;
   padding-right: 20px;
   flex-grow: 0;
 }
 
 .feedback__label--contacts {
+  margin-top: 0px;
   margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 18px;
+}
+
+.feedback__label--span {
+  display: none;
 }
 
 .feedback__label--phone {
+  margin-right: 82px;
   margin-bottom: 6px;
-  margin-right: 50px;
 }
 
 .feedback__label--email {
@@ -467,8 +531,15 @@
   order: -6;
 }
 
+.feedback__title--impression {
+  padding-right: 45px;
+}
+
 .feedback__section--place {
   width: 960px;
+}
+.feedback__title--place {
+  margin-bottom: 19px;
 }
 
 .feedback__title--place::before,
@@ -476,20 +547,30 @@
   width: 290px;
 }
 
+.feedback__place:nth-child(n+3) {
+  margin-top: 12px;
+}
+
 .feedback__place-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 25px 0px 28px 0px;
 }
 
 .feedback__label--place {
   width: 250px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 .feedback__place {
-  width: 240px;
+  padding-right: 40px;
+  width: 200px;
   text-align: center;
+}
+
+.feedback__place:last-child {
+  padding-right: 0px;
 }
 
 .feedback__title--emotion::before,
