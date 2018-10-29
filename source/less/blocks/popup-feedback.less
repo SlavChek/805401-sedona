@@ -5,6 +5,7 @@
   position: absolute;
   top: 1432px;
   right: 0px;
+  z-index: 1;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: #ffffff;
   text-align: center;
@@ -19,10 +20,6 @@
   margin-bottom: 27px;
 }
 
-.popup-feedback__text {
-
-}
-
 .popup-feedback__button {
   background-color: @input-color;
 }
@@ -35,14 +32,28 @@
 
 @media (min-width:@tablet-width) {
   .popup-feedback {
-    width: 320px;
+    width: 640px;
     height: auto;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 892px;
+    right: 64px;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
     background-color: #ffffff;
     text-align: center;
+  }
+
+  .popup-feedback__box {
+    padding: 64px 114px 20px 112px;
+  }
+  .popup-feedback__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .popup-feedback__btn {
+    width: 458px;
+    margin: 44px auto;
+    font-size: 21px;
   }
 }
 
