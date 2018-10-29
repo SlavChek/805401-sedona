@@ -6,7 +6,6 @@
   position: absolute;
   top: 1100px;
   right: 0px;
-  z-index: 1;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: #ffffff;
   text-align: center;
@@ -24,5 +23,38 @@
   width: 180px;
   height: 58px;
   margin-bottom: 35px;
+}
+
+@media (min-width:@tablet-width) {
+  .popup-error{
+    width: 277px;
+    height: auto;
+    padding: 55px 62px 49px 61px ;
+    position: absolute;
+    top: 1055px;
+    left: 182px;
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+  .popup-error__title {
+    margin-bottom: 24px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup-error__text {
+    margin-bottom: 32px;
+  }
+
+  .popup-error__btn{
+    width: 272px;
+    margin-bottom: 0px;
+    font-size: 21px;
+  }
+
 }
 /* Всплывающее окно с ошибкой ^ */

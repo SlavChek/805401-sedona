@@ -5,7 +5,6 @@
   position: absolute;
   top: 1432px;
   right: 0px;
-  z-index: 1;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
   background-color: #ffffff;
   text-align: center;
@@ -32,6 +31,19 @@
   width: 280px;
   height: 58px;
   margin: 20px;
+}
+
+@media (min-width:@tablet-width) {
+  .popup-feedback {
+    width: 320px;
+    height: auto;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+    background-color: #ffffff;
+    text-align: center;
+  }
 }
 
 /* Всплывающее окно cообщение об отправке ^ */
