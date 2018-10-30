@@ -493,12 +493,28 @@
 }
 
 .feedback__title--contacts {
+  position: relative;
+  padding-left: 340px;
+  width: 620px;
   margin-bottom: 65px;
 }
 
-.feedback__title--contacts::before,
+.feedback__title--contacts::before {
+  position: absolute;
+  content: "";
+  width: 270px;
+  height: 1px;
+  top: 14px;
+  left: 0px;
+}
+
 .feedback__title--contacts::after {
-  width: 285px;
+  position: absolute;
+  content: "";
+  width: 275px;
+  height: 1px;
+  top: 14px;
+  left: 630px;
 }
 
 .feedback__contacts{
