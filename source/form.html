@@ -38,7 +38,7 @@
     <main class="page-main main-container">
       <section class="page-main__comment wrapper content-wrapper">
         <h2 class="title--middle page-main__comment-title">оставьте свой отзыв</h2>
-        <p>
+        <p class="page-main__comment-text">
           Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях.
         </p>
       </section>
@@ -49,11 +49,11 @@
             <legend class="feedback__title feedback__title--name title--middle">представьтесь:</legend>
             <div class="feedback__name">
               <label class="feedback__label feedback__label--name" for="first-name">имя:*</label>
-              <input class="feedback__input feedback__input--name title--middle" name="first-name" id="first-name" type="text" placeholder="Пётр">
+              <input class="feedback__input feedback__input--name title--middle" name="first-name" id="first-name" type="text" placeholder="Пётр" required>
             </div>
             <div class="feedback__name">
               <label class="feedback__label feedback__label--name" for="last-name">фамилия:*</label>
-              <input class="feedback__input feedback__input--name title--middle" name="last-name" id="last-name" type="text" placeholder="Иванов">
+              <input class="feedback__input feedback__input--name title--middle" name="last-name" id="last-name" type="text" placeholder="Иванов" required>
             </div>
             <div class="feedback__name">
               <label class="feedback__label feedback__label--name" for="middle-name">отчество :</label>
@@ -64,10 +64,10 @@
             <legend class="feedback__title"><h2 class="feedback__title--contacts  title--middle">контактная информация:</h2></legend>
             <div class="feedback__contacts">
               <label class="feedback__label feedback__label--contacts" for="phone"><span class="feedback__label--span">контактный</span> телефон:*</label><br>
-              <input class="feedback__input feedback__input--contacts title--middle" name="phone" id="phone" type="tel" placeholder="Введите телефон">
+              <input class="feedback__input feedback__input--contacts title--middle" name="phone" id="phone" type="tel" placeholder="Введите телефон" pattern="[0-9]{5,12}" required >
               <div class="feedback__label--phone"></div>
               <label class="feedback__label feedback__label--contacts" for="email">электронная почта:*</label><br>
-              <input class="feedback__input feedback__input--contacts title--middle" name="email" id="email" type="text" placeholder="Введите e-mail">
+              <input class="feedback__input feedback__input--contacts title--middle" name="email" id="email" type="email" placeholder="Введите e-mail" required>
               <div class="feedback__label--email"></div>
             </div>
           </fieldset>
@@ -84,11 +84,6 @@
             <div class="feedback__impression">
               <input class="visually-hidden feedback__input feedback__input--impression" type="radio" name="impression" id="indifferently" value="indifferently">
               <label class="feedback__label feedback__label--impression title--middle" for="indifferently">Затрудняюсь ответить</label>
-            </div>
-            <div class="popup-error">
-              <span class="popup-error__title title--middle">что то пошло не так</span>
-              <p class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-              <button class="btn popup-error__btn" type="button">ok</button>
             </div>
           </fieldset>
           <fieldset class="feedback__section feedback__section--place">
@@ -115,7 +110,7 @@
           <fieldset class="feedback__section feedback__section--emotion">
             <legend class="feedback__title"><h2 class="feedback__title--emotion title--middle">Опишите свои эмоции:</h2></legend>
             <div class="feedback__emotion">
-              <textarea class="feedback__textarea feedback__textarea--emotion title--middle" id="emotion" name="mail" placeholder="Опишите подробно все свои восторги" rows="5" cols="25"></textarea>
+              <textarea class="feedback__textarea feedback__textarea--emotion title--middle" id="emotion" name="mail" placeholder="Опишите подробно все свои восторги" rows="5" cols="25" required></textarea>
             </div>
           </fieldset>
           <fieldset class="feedback__section feedback__section--buttom">
@@ -126,6 +121,22 @@
           </fieldset>
         </form>
       </section>
+      <!-- всплывающие окна -->
+      <div class="popup-error">
+        <h3 class="popup-error__title title--middle">что то пошло не так!</h3>
+        <p class="popup-error__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="btn popup-error__btn" type="button">ok</button>
+      </div>
+      <div class="popup-feedback">
+        <div class="popup-feedback__box">
+          <h3 class="popup-feedback__title title--middle">Ваш отзыв отправлен!</h3>
+          <p class="popup-feedback__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+        </div>
+        <div class="popup-feedback__button">
+          <button class="btn popup-feedback__btn" type="button">закрыть окно</button>
+        </div>
+      </div>
+      <!-- всплывающие окна ^ -->
     </main>
     <footer class="page-footer main-container">
       <div class="page-footer__wrapper wrapper">

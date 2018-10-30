@@ -1,0 +1,65 @@
+/* Всплывающее окно cообщение об отправке */
+.popup-feedback {
+  display: none;
+  width: 320px;
+  height: auto;
+  position: absolute;
+  top: 1432px;
+  right: 0px;
+  z-index: 1;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.popup-feedback__box {
+  padding: 41px 54px 20px 52px;
+}
+
+.popup-feedback__title {
+  margin-top: 0px;
+  margin-bottom: 27px;
+}
+
+.popup-feedback__button {
+  background-color: @input-color;
+}
+
+.popup-feedback__btn {
+  width: 280px;
+  height: 58px;
+  margin: 20px;
+}
+
+@media (min-width:@tablet-width) {
+  .popup-feedback {
+    width: 640px;
+    top: 892px;
+    right: 64px;
+  }
+
+  .popup-feedback__box {
+    padding: 64px 114px 20px 112px;
+  }
+  .popup-feedback__title {
+    margin-bottom: 30px;
+    font-size: 30px;
+  }
+
+  .popup-feedback__btn {
+    width: 458px;
+    margin: 44px auto;
+    font-size: 21px;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .popup-feedback {
+    width: 640px;
+    top: 677px;
+    right: 280px;
+  }
+
+}
+
+/* Всплывающее окно cообщение об отправке ^ */

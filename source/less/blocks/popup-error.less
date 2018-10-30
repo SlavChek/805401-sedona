@@ -1,23 +1,64 @@
+/* Всплывающее окно с ошибкой */
 .popup-error{
-  width: 320px;
-  height: 280px;
+  display: none;
+  width: 208px;
+  height: auto;
+  padding: 42px 56px 0px 56px;
   position: absolute;
-  top: 900px;
-  right: -20px;
-  z-index: 1;
+  top: 1100px;
+  right: 0px;
+  z-index: 2;
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-
-
+  background-color: #ffffff;
+  text-align: center;
 }
 .popup-error__title {
-  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 27px;
 }
 
 .popup-error__text {
-  text-align: center;
+  margin-bottom: 25px;
 }
 
 .popup-error__btn{
   width: 180px;
   height: 58px;
+  margin-bottom: 35px;
 }
+
+@media (min-width:@tablet-width) {
+  .popup-error{
+    width: 277px;
+    height: auto;
+    padding: 55px 62px 49px 61px ;
+    top: 1055px;
+    left: 182px;
+  }
+
+  .popup-error__title {
+    margin-bottom: 24px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .popup-error__text {
+    margin-bottom: 32px;
+  }
+
+  .popup-error__btn{
+    width: 272px;
+    margin-bottom: 0px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .popup-error{
+    top: 950px;
+    left: 400px;
+  }
+}
+/* Всплывающее окно с ошибкой ^ */
