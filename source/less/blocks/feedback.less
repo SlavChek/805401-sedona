@@ -169,6 +169,11 @@
   opacity: 0.3;
 }
 
+.feedback__input--impression:checked:focus + label::before,
+.feedback__input--impression:not(:checked):focus + label::after{
+  background-color: @input-color--down;
+}
+
 .feedback__section--place {
   margin-bottom: 0px;
 }
@@ -185,6 +190,11 @@
 
 .feedback__input--place:checked:active + label::after{
   opacity: 0.3;
+}
+
+.feedback__input--place:checked:focus + label::before,
+.feedback__input--place:not(:checked):focus + label::after{
+  background-color: @input-color--down;
 }
 
 .feedback__label--place,

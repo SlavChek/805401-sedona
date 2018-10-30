@@ -49,11 +49,11 @@
             <legend class="feedback__title feedback__title--name title--middle">представьтесь:</legend>
             <div class="feedback__name">
               <label class="feedback__label feedback__label--name" for="first-name">имя:*</label>
-              <input class="feedback__input feedback__input--name title--middle" name="first-name" id="first-name" type="text" placeholder="Пётр">
+              <input class="feedback__input feedback__input--name title--middle" name="first-name" id="first-name" type="text" placeholder="Пётр" required>
             </div>
             <div class="feedback__name">
               <label class="feedback__label feedback__label--name" for="last-name">фамилия:*</label>
-              <input class="feedback__input feedback__input--name title--middle" name="last-name" id="last-name" type="text" placeholder="Иванов">
+              <input class="feedback__input feedback__input--name title--middle" name="last-name" id="last-name" type="text" placeholder="Иванов" required>
             </div>
             <div class="feedback__name">
               <label class="feedback__label feedback__label--name" for="middle-name">отчество :</label>
@@ -64,10 +64,10 @@
             <legend class="feedback__title"><h2 class="feedback__title--contacts  title--middle">контактная информация:</h2></legend>
             <div class="feedback__contacts">
               <label class="feedback__label feedback__label--contacts" for="phone"><span class="feedback__label--span">контактный</span> телефон:*</label><br>
-              <input class="feedback__input feedback__input--contacts title--middle" name="phone" id="phone" type="tel" placeholder="Введите телефон">
+              <input class="feedback__input feedback__input--contacts title--middle" name="phone" id="phone" type="tel" placeholder="Введите телефон" pattern="[0-9]{5,12}" required >
               <div class="feedback__label--phone"></div>
               <label class="feedback__label feedback__label--contacts" for="email">электронная почта:*</label><br>
-              <input class="feedback__input feedback__input--contacts title--middle" name="email" id="email" type="text" placeholder="Введите e-mail">
+              <input class="feedback__input feedback__input--contacts title--middle" name="email" id="email" type="email" placeholder="Введите e-mail" required>
               <div class="feedback__label--email"></div>
             </div>
           </fieldset>
@@ -110,7 +110,7 @@
           <fieldset class="feedback__section feedback__section--emotion">
             <legend class="feedback__title"><h2 class="feedback__title--emotion title--middle">Опишите свои эмоции:</h2></legend>
             <div class="feedback__emotion">
-              <textarea class="feedback__textarea feedback__textarea--emotion title--middle" id="emotion" name="mail" placeholder="Опишите подробно все свои восторги" rows="5" cols="25"></textarea>
+              <textarea class="feedback__textarea feedback__textarea--emotion title--middle" id="emotion" name="mail" placeholder="Опишите подробно все свои восторги" rows="5" cols="25" required></textarea>
             </div>
           </fieldset>
           <fieldset class="feedback__section feedback__section--buttom">
