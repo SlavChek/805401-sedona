@@ -312,13 +312,27 @@
 }
 
 .feedback__title--contacts {
-  display: flex;
-  align-items: center;
+  position: relative;
+  width: 648px;
 }
 
-.feedback__title--contacts::before,
-.feedback__title--contacts::after {
+.feedback__title--contacts::before {
+  position: absolute;
   content: "";
+  top: 11px;
+  right: 475px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 120px;
+  height: 1px;
+  background: @input-color--label;
+}
+
+.feedback__title--contacts::after {
+  position: absolute;
+  content: "";
+  top: 11px;
+  right: 0px;
   flex-grow: 1;
   flex-shrink: 0;
   width: 120px;
