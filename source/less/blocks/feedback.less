@@ -47,6 +47,7 @@
   border: 4px solid #e5e5e5;
 }
 
+
 .feedback__input--name {
   width:100px;
   line-height: 26px;
@@ -266,6 +267,7 @@
   height: 135px;
   padding: 10px 20px;
   background-color: @input-color;
+  border: 0px;
 }
 
 .feedback__textarea:hover {
@@ -388,13 +390,29 @@
 }
 
 .feedback__title--place {
-  display: flex;
-  align-items: center;
+  position: relative;
+  width: 278px;
+  margin-left: 186px;
+  margin-right: 184px;
 }
 
-.feedback__title--place::before,
-.feedback__title--place::after {
+.feedback__title--place::before {
+  position: absolute;
   content: "";
+  top: 25px;
+  right: 290px;
+  flex-grow: 1;
+  flex-shrink: 0;
+  width: 130px;
+  height: 1px;
+  background: @input-color--label;
+}
+
+.feedback__title--place::after {
+  position: absolute;
+  content: "";
+  top: 25px;
+  right: -183px;
   flex-grow: 1;
   flex-shrink: 0;
   width: 130px;
@@ -439,14 +457,30 @@
 }
 
 .feedback__title--emotion {
+  width: 300px;
+  margin-left: 174px;
+  margin-right: 174px;
   margin-bottom: 58px;
-  display: flex;
-  align-items: center;
+  position: relative;
 }
 
-.feedback__title--emotion::before,
-.feedback__title--emotion::after {
+.feedback__title--emotion::before {
+  position: absolute;
   content: "";
+  top: 12px;
+  right: 300px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  width: 130px;
+  height: 1px;
+  background: @input-color--label;
+}
+
+.feedback__title--emotion::after {
+  position: absolute;
+  content: "";
+  top: 12px;
+  right: -170px;
   flex-grow: 1;
   flex-shrink: 1;
   width: 130px;
@@ -509,8 +543,8 @@
 
 .feedback__title--contacts {
   position: relative;
-  padding-left: 340px;
-  padding-right: 300px;
+  padding-left: 330px;
+  padding-right: 330px;
   width: 300px;
   margin-bottom: 65px;
 }
@@ -577,12 +611,15 @@
 .feedback__section--place {
   width: 960px;
 }
+
 .feedback__title--place {
+  width: 300px;
+  margin-left: 0px;
+  margin-right: 0px;
   margin-bottom: 19px;
-  position: relative;
   padding-left: 330px;
   padding-right: 330px;
-  width: 300px;
+  position: relative;
 }
 
 .feedback__title--place::before {
@@ -630,6 +667,8 @@
 .feedback__title--emotion {
   position: relative;
   width: 300px;
+  margin-right: 0px;
+  margin-left: 0px;
   padding-left: 350px;
   padding-right: 300px;
 }
