@@ -279,6 +279,8 @@
 }
 
 .feedback__textarea:focus {
+  width: 226px;
+  height: 127px;
   background-color: @text-color--inner;
   border: 4px solid #e5e5e5;
 }
@@ -354,6 +356,10 @@
   width: 548px;
   margin-bottom: 16px;
   padding-right: 12px;
+}
+
+.feedback__input--contacts:focus {
+  width: 546px;
 }
 
 .feedback__label--phone {
@@ -501,6 +507,10 @@
   font-size: 18px;
 }
 
+.feedback__textarea--emotion:focus {
+  width: 600px;
+}
+
 .feedback__btn {
   width: 648px;
   display: flex;
@@ -575,7 +585,13 @@
 
 .feedback__input--contacts {
   width: 212px;
-  padding-right: 12px;
+  padding-right: 10px;
+  flex-grow: 1;
+}
+
+.feedback__input--contacts:focus {
+  width: 204px;
+  padding-right: 10px;
   flex-grow: 1;
 }
 
@@ -689,6 +705,10 @@
 
 .feedback__textarea--emotion {
   width: 916px;
+}
+
+.feedback__textarea--emotion:focus {
+  width: 908px;
 }
 
 .feedback__btn {
