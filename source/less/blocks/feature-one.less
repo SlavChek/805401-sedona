@@ -6,7 +6,7 @@
   padding-top: 58px;
   padding-bottom: 10px;
   text-align: center;
-  background-image: url(../img/bg-triangle.svg);
+  background-image: url("../img/bg-triangle.svg");
   background-repeat: no-repeat;
   background-position: 50% top;
   background-size: auto;
@@ -49,7 +49,7 @@
   position: absolute;
   top: 20px;
   left: 0;
-  background-image: url(../img/icon-house.svg);
+  background-image: url("../img/icon-house.svg");
   background-repeat: no-repeat;
   background-size: 40px 35px;
   background-position: 0 0;
@@ -66,7 +66,7 @@
   position: absolute;
   top: -7px;
   left: 1px;
-  background-image: url(../img/icon-gift.svg);
+  background-image: url("../img/icon-gift.svg");
   background-repeat: no-repeat;
   background-size: 40px 35px;
   background-position: 0 0;
@@ -74,7 +74,6 @@
 
 .feature-one__food-block {
   margin-top: 25px;
-
 }
 
 .feature-one__food-block::before {
@@ -84,7 +83,7 @@
   position: absolute;
   top: -2px;
   left: 1px;
-  background-image: url(../img/icon-burger.svg);
+  background-image: url("../img/icon-burger.svg");
   background-repeat: no-repeat;
   background-size: 40px 35px;
   background-position: 0 0;
@@ -118,20 +117,10 @@
     overflow: hidden;
   }
 
-  .feature-one__img-block {
-    margin-bottom: 60px;
-  }
-
-  .feature-one__fun-block {
-    display: flex;
-    margin-bottom: 52px;
-  }
-
   .feature-one__housing-block,
   .feature-one__souvenirs-block,
   .feature-one__food-block {
     margin-top: 0;
-    padding-left: 0;
     padding: 70px 0 0 0;
     display: flex;
     flex-wrap: wrap;
@@ -212,20 +201,15 @@
     min-height: auto;
   }
 }
+
 /* Описание состояний в блоке feature-one tablet ^*/
 
 /* Описание состояний в блоке feature-one desktop */
-@media(min-width: @desktop-width) {
+@media (min-width: @desktop-width) {
   .feature-one__promo {
     width: 273px;
     height: 160px;
     padding: 48px 62px 48px 65px;
-  }
-
-  .feature-one__title {
-    width: 146px;
-    margin: 5px 0 10px 0;
-    padding: 0 50px;
   }
 
   .feature-one__text {
@@ -266,6 +250,7 @@
 
   .feature-one__title {
     width: 146px;
+    margin: 5px 0 10px 0;
     padding: 0 50px;
   }
 
@@ -298,7 +283,5 @@
     height: 42px;
     overflow: hidden;
   }
-
-
 }
 /* Описание состояний в блоке feature-one desktop ^ */

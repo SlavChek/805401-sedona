@@ -5,6 +5,7 @@
   position: relative;
   min-height: 280px;
 }
+
 .main-nav__link {
   display: table-cell;
   width: 320px;
@@ -15,7 +16,7 @@
   vertical-align: middle;
   font-size: 18px;
   font-weight: bold;
-  line-height: 40px
+  line-height: 40px;
 }
 
 .main-nav__link:hover {
@@ -87,7 +88,7 @@
   right: 20px;
   width: 25px;
   height: 25px;
-  background-image: url(../img/icon-menu.svg);
+  background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
@@ -100,6 +101,7 @@
     min-height: 58px;
     min-width: 768px;
   }
+
   .main-nav__item:nth-child(3) {
     margin-left: 160px;
   }
@@ -150,14 +152,12 @@
   .main-nav__open {
     display: none;
   }
-
 }
 /*Описание состояний для блока main-nav tablet^*/
 
 /*Описание состояний для блока main-nav desktop*/
 
 @media (min-width: @desktop-width) {
-
   .main-nav__item:nth-child(1) {
     padding-left: 40px;
   }
@@ -174,7 +174,6 @@
   .main-nav__item:nth-child(4) {
     padding-right: 45px;
   }
-
 }
 
 /*Описание состояний для блока main-nav desktop^*/

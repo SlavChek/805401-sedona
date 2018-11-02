@@ -5,7 +5,7 @@
   min-height: 300px;
   min-width: 278px;
   background-color: @sky-blue-bg;
-  background-image: url(../img/bg-intro-triangle-mobile.svg),url(../img/bg-back-mobile@1x.jpg);
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% bottom;
   background-size: cover;
@@ -15,20 +15,21 @@
 
 /* Описание состояний в блоке big-header tablet*/
 
-@media (min-width: @tablet-width){
+@media (min-width: @tablet-width) {
   .big-header {
     padding-top: 0;
     min-height: 518px;
     background-color: @sky-blue-bg;
-    background-image: url(../img/bg-intro-triangle-desktop.svg),url(../img/bg-back-tablet@1x.jpg);
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% bottom;
     background-size: auto;
+
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url(../img/bg-intro-triangle-desktop.svg),url("../img/bg-back-tablet@2x.jpg");
+      background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-tablet@2x.jpg");
       background-repeat: no-repeat;
       background-position: 50% bottom;
-      background-size:auto, 100%;
+      background-size: auto, 100%;
     }
   }
 
@@ -43,21 +44,21 @@
 }
 
 @media (min-width: 768px) and (min-resolution: 144dpi),
-(min-width: 768px) and (min-resolution: 1.5dppx) {
+  (min-width: 768px) and (min-resolution: 1.5dppx) {
   .big-header {
-    background-image: url(../img/bg-intro-triangle-desktop.svg),url("../img/bg-back-tablet@2x.jpg");
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-tablet@2x.jpg");
     background-size: 100% cover;
   }
 }
 /* Описание состояний в блоке big-header tablet^*/
 
 /* Описание состояний в блоке big-header desktop*/
-@media (min-width: @desktop-width){
+@media (min-width: @desktop-width) {
   .big-header {
     padding-top: 0;
     min-height: 518px;
     background-color: @sky-blue-bg;
-    background-image: url(../img/bg-intro-triangle-desktop.svg),url(../img/bg-back-desktop@1x.jpg);
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
     background-repeat: no-repeat;
     background-position: 50% bottom;
     background-size: auto, cover;

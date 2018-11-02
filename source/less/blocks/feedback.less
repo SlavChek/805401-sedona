@@ -47,7 +47,6 @@
   border: 4px solid #e5e5e5;
 }
 
-
 .feedback__input--name {
   width: 100px;
   line-height: 26px;
@@ -64,25 +63,10 @@
 }
 
 .feedback__label--phone {
-  margin-bottom: 5px;
-  width: 58px;
-  height: 58px;
-  background-image: url(../img/icon-phone.svg);
-  background-color: @input-color--label;
-  background-size: 18px 18px;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.feedback__label--phone {
   margin: 5px 0 0 0;
-}
-
-.feedback__label--email {
-  margin-bottom: 5px;
   width: 58px;
   height: 58px;
-  background-image: url(../img/icon-mail.svg);
+  background-image: url("../img/icon-phone.svg");
   background-color: @input-color--label;
   background-size: 18px 18px;
   background-repeat: no-repeat;
@@ -91,6 +75,13 @@
 
 .feedback__label--email {
   margin: 4px 0 0 0;
+  width: 58px;
+  height: 58px;
+  background-image: url("../img/icon-mail.svg");
+  background-color: @input-color--label;
+  background-size: 18px 18px;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .feedback__label--contacts {
@@ -236,7 +227,7 @@
   width: 24px;
   height: 16px;
   border-radius: 5px;
-  background-image: url(../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
   background-position: 0 0;
 }
 
@@ -287,7 +278,6 @@
 /* Описание состояний в feedback ^ */
 
 @media (min-width: @tablet-width) {
-
   .feedback__form {
     display: flex;
     flex-wrap: wrap;
@@ -321,6 +311,7 @@
   }
 
   .feedback__title--contacts::before {
+    margin-right: 50px;
     position: absolute;
     content: "";
     top: 11px;
@@ -333,23 +324,16 @@
   }
 
   .feedback__title--contacts::after {
+    margin-left: 50px;
     position: absolute;
     content: "";
     top: 11px;
-    right: 0px;
+    right: 0;
     flex-grow: 1;
     flex-shrink: 0;
     width: 120px;
     height: 1px;
     background: @input-color--label;
-  }
-
-  .feedback__title--contacts::before {
-    margin-right: 50px;
-  }
-
-  .feedback__title--contacts::after {
-    margin-left: 50px;
   }
 
   .feedback__input--contacts {
@@ -403,6 +387,7 @@
   }
 
   .feedback__title--place::before {
+    margin-right: 50px;
     position: absolute;
     content: "";
     top: 25px;
@@ -415,6 +400,7 @@
   }
 
   .feedback__title--place::after {
+    margin-left: 50px;
     position: absolute;
     content: "";
     top: 25px;
@@ -424,19 +410,6 @@
     width: 130px;
     height: 1px;
     background: @input-color--label;
-  }
-
-  .feedback__title--place::before {
-    margin-right: 50px;
-  }
-
-  .feedback__title--place::after {
-    margin-left: 50px;
-  }
-
-  .feedback__place-wrapper {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .feedback__place {
@@ -449,6 +422,8 @@
   }
 
   .feedback__place-wrapper {
+    display: flex;
+    flex-wrap: wrap;
     margin: 25px 30px 28px 95px;
     justify-content: center;
   }
@@ -471,6 +446,7 @@
   }
 
   .feedback__title--emotion::before {
+    margin-right: 50px;
     position: absolute;
     content: "";
     top: 12px;
@@ -483,6 +459,7 @@
   }
 
   .feedback__title--emotion::after {
+    margin-left: 50px;
     position: absolute;
     content: "";
     top: 12px;
@@ -492,14 +469,6 @@
     width: 130px;
     height: 1px;
     background: @input-color--label;
-  }
-
-  .feedback__title--emotion::before {
-    margin-right: 50px;
-  }
-
-  .feedback__title--emotion::after {
-    margin-left: 50px;
   }
 
   .feedback__textarea--emotion {
@@ -524,7 +493,6 @@
 }
 
 @media (min-width: @desktop-width) {
-
   .page-main__comment {
     width: 960px;
   }
@@ -565,7 +533,7 @@
     width: 270px;
     height: 1px;
     top: 14px;
-    left: 0px;
+    left: 0;
   }
 
   .feedback__title--contacts::after {
@@ -726,5 +694,4 @@
     width: 960px;
     margin: 0 auto;
   }
-
 }
