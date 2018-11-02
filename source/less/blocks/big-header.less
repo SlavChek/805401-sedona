@@ -15,35 +15,35 @@
 
 /* Описание состояний в блоке big-header tablet*/
 
-@media (min-width:@tablet-width){
-.big-header {
-  padding-top: 0px;
-  min-height: 518px;
-  background-color: @sky-blue-bg;
-  background-image: url(../img/bg-intro-triangle-desktop.svg),url(../img/bg-back-tablet@1x.jpg);
-  background-repeat: no-repeat;
-  background-position: 50% bottom;
-  background-size: auto;
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-        background-image: url(../img/bg-intro-triangle-desktop.svg),url("../img/bg-back-tablet@2x.jpg");
-        background-repeat: no-repeat;
-        background-position: 50% bottom;
-        background-size:auto, 100%;
-      }
-}
+@media (min-width: @tablet-width){
+  .big-header {
+    padding-top: 0px;
+    min-height: 518px;
+    background-color: @sky-blue-bg;
+    background-image: url(../img/bg-intro-triangle-desktop.svg),url(../img/bg-back-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    background-size: auto;
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url(../img/bg-intro-triangle-desktop.svg),url("../img/bg-back-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: 50% bottom;
+      background-size:auto, 100%;
+    }
+  }
 
-.big-header__text {
-  width: 460px;
-  height: 350px;
-  margin-top: 77px;
-  margin-left: 154px;
-  margin-right: 154px;
-  padding-bottom: 18px;
-}
+  .big-header__text {
+    width: 460px;
+    height: 350px;
+    margin-top: 77px;
+    margin-left: 154px;
+    margin-right: 154px;
+    padding-bottom: 18px;
+  }
 }
 
 @media (min-width: 768px) and (min-resolution: 144dpi),
-        (min-width: 768px) and (min-resolution: 1.5dppx) {
+(min-width: 768px) and (min-resolution: 1.5dppx) {
   .big-header {
     background-image: url(../img/bg-intro-triangle-desktop.svg),url("../img/bg-back-tablet@2x.jpg");
     background-size: 100% cover;
@@ -61,13 +61,13 @@
     background-repeat: no-repeat;
     background-position: 50% bottom;
     background-size: auto, cover;
-}
+  }
 
-.big-header__text {
-  margin-top: 78px;
-  margin-left: 370px;
-  margin-right: 370px;
-  padding-bottom: 18px;
-}
+  .big-header__text {
+    margin-top: 78px;
+    margin-left: 370px;
+    margin-right: 370px;
+    padding-bottom: 18px;
+  }
 }
 /* Описание состояний в блоке big-header desktop^*/
