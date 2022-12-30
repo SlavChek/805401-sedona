@@ -18,6 +18,10 @@
   display: none;
 }
 
+* {
+  transition: all 0.3s ease-out;
+}
+
 body {
   min-width: 320px;
   margin: 0;
@@ -130,6 +134,14 @@ img {
 .btn--submit {
   width: 280px;
   height: 58px;
+}
+
+.added use {
+  fill: rgb(255, 183, 0);
+}
+
+.added-color {
+  color: @text-added-color;
 }
 
 @media (min-width: @tablet-width) {
